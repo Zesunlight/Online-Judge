@@ -1,4 +1,10 @@
-# NYOJ
+# problems and solutions
+
+## CDOJ
+http://acm.uestc.edu.cn/#/
+
+
+## NYOJ
 http://acm.nyist.net/JudgeOnline/problemset.php
 
-problems and solutions
+
