@@ -29,6 +29,11 @@ int sort(int n)
 	digit[1] = n / 100 - digit[0] * 10;
 	digit[2] = n / 10 - digit[0] * 100 - digit[1] * 10;
 	digit[3] = n % 10;
+		
+/*	a[0]=n%10;
+	a[3]=n/1000;
+	a[1]=n/10%10;
+	a[2]=n/100%10;		*/	
 	
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 3 - i; j++) {
