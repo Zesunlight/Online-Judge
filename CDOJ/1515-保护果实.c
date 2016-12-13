@@ -38,8 +38,12 @@ int main()
     int n,i,m;
     int s;
     scanf("%d",&n);
-    for(i = 0; i < n; i++) scanf("%d",&a[i]);
-    if(n < 3) {printf("-1\n"); return 0;}
+    for(i = 0; i < n; i++) 
+	    scanf("%d",&a[i]);
+    if(n < 3) {
+	    printf("-1\n"); 
+	    return 0;
+    }
     m = max(a[0],a[1]);
     s = min(a[0],a[1]);
     for(i = 2; i < n; i++)
