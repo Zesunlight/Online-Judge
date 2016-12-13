@@ -43,3 +43,6 @@ int sum(int a1, int a2, int a3)
 		sum =  a1 + 2*a2 + 3*a3;
 	return sum;
 }
+
+
+//BNUOJ 52297
