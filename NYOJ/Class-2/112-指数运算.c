@@ -7,7 +7,7 @@ int main()
 	int x = 0, n = 0;
 	while (scanf("%d%d", &x, &n) != EOF) {
 		long long int result = 1;
-		//结果有时候很很大！！ 
+		//缁撴灉鏈夋椂鍊欏緢寰堝ぇ锛侊紒 
 		for (int i = 0; i < n; i++)
 			result *= x;
 		printf("%lld\n", result);
