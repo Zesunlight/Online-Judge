@@ -10,8 +10,6 @@ int cut2(int n, int m);
 
 int main()
 {
-    freopen("INPUT.txt", "r", stdin);
-    freopen("OUTPUT.txt", "w", stdout);
 
     int n = 1, k = 1;
     while (cin >> n >> k) {
