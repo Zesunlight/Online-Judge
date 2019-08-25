@@ -84,6 +84,7 @@ public class Solution {
 
 """
 https://leetcode.com/problems/rotate-image/discuss/19002/4ms-few-lines-C++-code-Rotate-Image-90-degree-for-O(1)-space
+把矩阵看成若干同心圆，每个圈转90度
 
 void rotate(vector<vector<int>>& matrix) {
         int n = matrix.size();
