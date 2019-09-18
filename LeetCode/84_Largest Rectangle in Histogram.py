@@ -1,7 +1,7 @@
 """
     Problem: 84. Largest Rectangle in Histogram
     Website: https://leetcode.com/problems/largest-rectangle-in-histogram/
-    Difficulty: Medium
+    Difficulty: Hard
     Author: ZYZ
     Language: Python3
     Result: Accepted
