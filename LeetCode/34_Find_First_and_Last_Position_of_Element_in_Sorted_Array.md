@@ -32,7 +32,7 @@
 
 ## 代码
 
-Python（[源码](https://github.com/Zesunlight/Online-Judge/blob/master/LeetCode/34_Find First and Last Position of Element in Sorted Array.py))
+Python
 
 ```python
 def searchRange(self, nums, target):
