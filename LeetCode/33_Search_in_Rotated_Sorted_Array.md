@@ -39,7 +39,7 @@
 
 ## 代码
 
-Python（[源码](https://github.com/Zesunlight/Online-Judge/blob/master/LeetCode/33_Search in Rotated Sorted Array.py)）
+Python
 
 ```python
 def search(self, nums, target: int) -> int:
