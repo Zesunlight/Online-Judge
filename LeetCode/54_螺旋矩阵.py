@@ -28,6 +28,7 @@ class Solution:
                 [matrix[m-i-1][k] for k in range(n-j-2, j-1, -1)],
                 [matrix[k][j] for k in range(m-i-2, i, -1)]]
             for k in r:
+                # (当路径的长度达到矩阵中的元素数量时即为完整路径，将该路径返回)
                 if not k:
                     return res
                 else:
@@ -44,7 +45,7 @@ class Solution:
         res = []
         while matrix:
             res += matrix.pop(0)
-            matrix = list(map(list, zip(*matrix)))[::-1]
+            matrix = list(zip(*matrix))[::-1]
         return res
 """
 
@@ -81,6 +82,34 @@ public:
 
 作者：youlookdeliciousc
 链接：https://leetcode-cn.com/problems/spiral-matrix/solution/cxiang-xi-ti-jie-by-youlookdeliciousc-3/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+"""
+
+"""
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        if not matrix or not matrix[0]:
+            return list()
+        
+        rows, columns = len(matrix), len(matrix[0])
+        order = list()
+        left, right, top, bottom = 0, columns - 1, 0, rows - 1
+        while left <= right and top <= bottom:
+            for column in range(left, right + 1):
+                order.append(matrix[top][column])
+            for row in range(top + 1, bottom + 1):
+                order.append(matrix[row][right])
+            if left < right and top < bottom:
+                for column in range(right - 1, left, -1):
+                    order.append(matrix[bottom][column])
+                for row in range(bottom, top, -1):
+                    order.append(matrix[row][left])
+            left, right, top, bottom = left + 1, right - 1, top + 1, bottom - 1
+        return order
+
+作者：LeetCode-Solution
+链接：https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/solution/shun-shi-zhen-da-yin-ju-zhen-by-leetcode-solution/
 来源：力扣（LeetCode）
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 """
