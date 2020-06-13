@@ -59,3 +59,39 @@ https://leetcode.com/problems/climbing-stairs/discuss/25296/3-4-short-lines-in-e
 def climbStairs(self, n):
     return int((5**.5 / 5) * (((1 + 5**.5)/2)**(n + 1) - ((1 - 5**.5)/2)**(n + 1)))
 """
+
+"""
+快速幂算法
+public class Solution {
+   public int climbStairs(int n) {
+       int[][] q = {{1, 1}, {1, 0}};
+       int[][] res = pow(q, n);
+       return res[0][0];
+   }
+   public int[][] pow(int[][] a, int n) {
+       int[][] ret = {{1, 0}, {0, 1}};
+       while (n > 0) {
+           if ((n & 1) == 1) {
+               ret = multiply(ret, a);
+           }
+           n >>= 1;
+           a = multiply(a, a);
+       }
+       return ret;
+   }
+   public int[][] multiply(int[][] a, int[][] b) {
+       int[][] c = new int[2][2];
+       for (int i = 0; i < 2; i++) {
+           for (int j = 0; j < 2; j++) {
+               c[i][j] = a[i][0] * b[0][j] + a[i][1] * b[1][j];
+           }
+       }
+       return c;
+   }
+}
+
+作者：LeetCode-Solution
+链接：https://leetcode-cn.com/problems/climbing-stairs/solution/pa-lou-ti-by-leetcode-solution/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+"""
