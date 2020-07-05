@@ -109,3 +109,19 @@ https://leetcode.com/problems/regular-expression-matching/discuss/5651/Easy-DP-J
                            or dp[i][j] = dp[i][j-1]   // in this case, a* counts as single a
                            or dp[i][j] = dp[i][j-2]   // in this case, a* counts as empty
 '''
+
+'''
+    def isMatch(self, s, p):
+        """
+        :type s: str
+        :type p: str
+        :rtype: bool
+        """
+        s1 = re.compile(p).findall(s)
+        if s1 == []:
+            return False;
+        if s1[0] == s:
+            return True;
+        else:
+            return False;
+'''
