@@ -18,7 +18,7 @@ class Solution:
     每段绳子的长度记为 k[0],k[1]...k[m-1] 。
     请问 k[0]*k[1]*...*k[m-1] 可能的最大乘积是多少？
     """
-    ddef cuttingRope(self, n: int) -> int:
+    def cuttingRope(self, n: int) -> int:
         res = 0
         for i in range(2, n + 1):
             res = max(res, self.cut_to_m(n, i))
