@@ -6,8 +6,8 @@ Difficulty: 简单
 Author: ZYZ
 Language: Java
 Result: Accepted
-Runtime: 0 ms, 在所有 Python3 提交中击败了100.00%的用户
-Memory Usage: 38.9 MB, 在所有 Python3 提交中击败了100.00%的用户
+Runtime: 0 ms, 在所有 Java 提交中击败了100.00%的用户
+Memory Usage: 38.9 MB, 在所有 Java 提交中击败了100.00%的用户
 ==================================================*/
 
 
