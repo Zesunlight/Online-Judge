@@ -37,3 +37,22 @@ class Solution:
             if i != j:
                 diff += 1
         return diff
+
+'''
+class Solution {
+public:
+    int minimumOperations(string leaves) {
+        int r = (leaves[0] != 'r') + (leaves[1] != 'r');
+        int ry = (leaves[0] != 'r') + (leaves[1] != 'y');
+        int ryr = ry;
+        for (int i = 2; i < leaves.size(); i++) {
+            ryr = min(ryr, ry) + (leaves[i] != 'r');
+            ry = min(r, ry) + (leaves[i] != 'y');
+            r += (leaves[i] != 'r');
+        }
+        return ryr;
+    }
+};
+
+https://leetcode-cn.com/problems/UlBDOe/comments/612477
+'''
