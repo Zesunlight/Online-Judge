@@ -1,3 +1,6 @@
+# http://lx.lanqiao.cn/problem.page?gpid=T445
+
+
 n = int(input())
 res = ''
 while n > 0:

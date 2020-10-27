@@ -1,3 +1,6 @@
+# http://lx.lanqiao.cn/problem.page?gpid=T459
+
+
 def base(n, b):
     # 十进制转b进制
 
