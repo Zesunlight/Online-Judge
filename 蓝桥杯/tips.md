@@ -26,3 +26,25 @@
 - BFS，定义一个类表示每一个点，类里可以用一个属性存储当前步数；或者使用队列的时候，pop原队列，新节点push到新队列，原队列空了，令原队列等于新队列，步数加一
 - 二分法，求XX最大值最小是多少、XX最小值最大是多少
 - 用二进制来压缩01数组，便于集合去重
+
+### 数学
+
+- $$
+  \vec{a}=\left(x_{1}, y_{1}\right), \quad \vec{b}=\left(x_{2}, y_{2}\right) \\
+  \vec{a} \cdot \vec{b}=|\vec{a}| \cdot|\vec{b}| \cdot \cos <\vec{a}, \vec{b}> = x_{1} x_{2} + y_{1} y_{2} \\
+  |\vec{a} \times \vec{b}|=|\vec{a}| \cdot|\vec{b}| \cdot \sin <\vec{a}, \vec{b}> = |x_{1} y_{2}-x_{2} y_{1}|
+  $$
+
+- 叉积可用于计算多边形面积
+
+- $$
+  \vec{a} \times \vec{b} = 
+  \left|\begin{array}{ccc}
+  i & j & k \\
+  a x & a y & a z \\
+  b x & b y & b z
+  \end{array}\right|
+  $$
+
+- 
+
