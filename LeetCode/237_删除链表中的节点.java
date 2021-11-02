@@ -1,6 +1,6 @@
 /*
     237. 删除链表中的节点
-    https://leetcode-cn.com/problems/add-digits/submissions/
+    https://leetcode-cn.com/problems/delete-node-in-a-linked-list/
 
     请编写一个函数，用于 删除单链表中某个特定节点 。
     在设计函数时需要注意，你无法访问链表的头节点 head ，只能直接访问要被删除的节点 。
