@@ -53,3 +53,4 @@ class Solution:
 if __name__ == '__main__':
     solution = Solution()
     print(solution.divide(1, 1))
+    print(3)
